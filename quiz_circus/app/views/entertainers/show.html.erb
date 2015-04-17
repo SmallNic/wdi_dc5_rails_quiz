@@ -1,2 +1,5 @@
-<%= @entertainer.name %>
-<img src="<%= @entertainer.image_url %>" />
+<%= link_to "See All Circuses", circuses_path %>
+<%= link_to "See All Entertainers", entertainers_path %>
+
+<h2><%= @entertainer.name.capitalize %></h2>
+Specialty: <%= @entertainer.specialty %>

@@ -1,3 +1,6 @@
+<%= link_to "See All Entertainers", entertainers_path %>
+
+
 <% @circuses.each do |circus| %>
   <p><%= link_to circus.name, circus %></a></p>
   <img src="<%= circus.image_url  %> ">

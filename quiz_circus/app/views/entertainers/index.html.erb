@@ -1,4 +1,6 @@
+<%= link_to "See All Circuses",  circuses_path %>
+
 <h1> Entertainers </h1>
 <% @entertainers.each do |entertainer| %>
-  <p><%= entertainer.name %></p>
+<p><%= link_to entertainer.name, entertainer %></a></p>
 <% end %>
