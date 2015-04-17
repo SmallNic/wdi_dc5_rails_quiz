@@ -1,1 +1,18 @@
+<%= form_for(@circus) do |f| %>
 
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :image_url %>
+  <%= f.text_field :image_url %>
+
+  <%= f.submit %>
+
+
+<!-- t.string   "name"
+t.string   "image_url"
+t.datetime "created_at", null: false
+t.datetime "updated_at", null: false -->
+
+
+<% end %>

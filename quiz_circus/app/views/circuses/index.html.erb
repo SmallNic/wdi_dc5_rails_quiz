@@ -1,0 +1,9 @@
+<% @circuses.each do |circus| %>
+  <p><%= link_to circus.name, circus %></a></p>
+  <img src="<%= circus.image_url  %> ">
+<% end %>
+
+<!-- t.string   "name"
+t.string   "image_url"
+t.datetime "created_at", null: false
+t.datetime "updated_at", null: false -->

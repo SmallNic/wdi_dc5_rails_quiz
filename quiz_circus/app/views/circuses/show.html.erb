@@ -1,1 +1,13 @@
+<%= link_to "Home", circuses_path %>
+<h2><%= @circus.name %>:</h2>
+<% @circus.entertainers.all.each do |entertainer| %>
+  <p> Name: <%= entertainer.name.capitalize %></p>
+  <p> Specialty: <%= entertainer.specialty %></p><br>
+<% end %>
 
+
+<!-- t.string   "name"
+t.string   "specialty"
+t.integer  "circus_id"
+t.datetime "created_at", null: false
+t.datetime "updated_at", null: false -->
